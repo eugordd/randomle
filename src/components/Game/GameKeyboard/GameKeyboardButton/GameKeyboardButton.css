@@ -1,0 +1,41 @@
+.game-keyboard-button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    margin: 0 6px 0 0;
+    height: 58px;
+    width: var(--key-width);
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--key-bg);
+    color: var(--key-text-color);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.3);
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.game-keyboard-button_increased {
+    flex: 1.5;
+    font-size: 24px;
+}
+
+.game-keyboard-button_absent {
+    background-color: var(--key-bg-absent);
+    color: var(--key-evaluated-text-color);
+}
+
+.game-keyboard-button_present {
+    background-color: var(--key-bg-present);
+    color: var(--key-evaluated-text-color);
+}
+
+.game-keyboard-button_correct {
+    background-color: var(--key-bg-correct);
+    color: var(--key-evaluated-text-color);
+}

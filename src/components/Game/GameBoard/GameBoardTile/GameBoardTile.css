@@ -1,0 +1,37 @@
+.game-board-tile {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: var(--tile-text-color);
+    border: 2px solid var(--color-tone-4);
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.game-board-tile_blank {
+    border: 2px solid var(--color-tone-4);
+}
+
+.game-board-tile_active {
+    background-color: var(--color-tone-7);
+    border: 2px solid var(--color-tone-3);
+    color: var(--color-tone-1);
+}
+
+.game-board-tile_absent {
+    background-color: var(--color-absent);
+}
+
+.game-board-tile_present {
+    background-color: var(--color-present);
+}
+
+.game-board-tile_correct {
+    background-color: var(--color-correct);
+}
